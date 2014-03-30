@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="GroovyExamplee" parallel="false">
+  
+    <test name="check-positive">
+        
+        <parameter name="dataFile" value="target/test-classes/good-data.csv" />
+                
+         <groups>
+	    <run>
+		<include name="positiveTests" />
+	    </run>
+	</groups>
+        
+        <classes>
+            <class name="ca.pmcgovern.ThreeCheckerTest" />
+        </classes>
+
+    </test>
+
+
+    <test name="check-negative">
+        
+        <parameter name="dataFile" value="target/test-classes/bad-data.csv" />
+        
+         <groups>
+	    <run>
+		<include name="negativeTests" />
+	    </run>
+	</groups>
+
+        <classes>
+            <class name="ca.pmcgovern.ThreeCheckerTest" />
+        </classes>
+    </test>
+</suite>

@@ -94,16 +94,6 @@
                 </dependencies>
             </plugin>
 
-            <!-- The  true for extension makes the groovy  -->
-            <!-- dirs available, apparently.               -->
-    <!--        <plugin>
-                <groupId>org.codehaus.groovy</groupId>
-                <artifactId>groovy-eclipse-compiler</artifactId>
-                <version>2.7.0-01</version>
-                <extensions>true</extensions>
-            </plugin>
--->
-
    <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
